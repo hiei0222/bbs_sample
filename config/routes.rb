@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
+  resources :users
+
   resources :responses
   
   root :to => 'main#index'
